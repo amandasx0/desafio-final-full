@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import Button from "../Button";
+import PersonDefault from "../../assets/foto.png"
 
 import styles from "./style.module.scss";
 
@@ -62,7 +63,7 @@ const User = ({ isMobile = false, closeMenu }) => {
           {!isMobile ? (
             <div className={styles.userArea} ref={dropdownRef}>
               <img
-                src={user.image}
+                src={user.image !== '' ? user.name : PersonDefault}
                 alt="Imagem do usuário"
                 className={styles.avatar}
                 onClick={() => setOpenDropdown((prev) => !prev)}
@@ -92,7 +93,7 @@ const User = ({ isMobile = false, closeMenu }) => {
           ) : (
             <div className={styles.boxInfoMobile}>
               <div className={styles.userInfo}>
-                <img src={user.image} alt="User" className={styles.avatar} />
+                <img src={user.image !== '' ? user.image : PersonDefault} alt="User" className={styles.avatar} />
                 <strong>{firstTwoNames}</strong>
               </div>
 

@@ -3,6 +3,7 @@ import { Layout } from "../Layout";
 import IconPin from "../../assets/pin.png";
 import IconEmail from "../../assets/e-mail.png";
 import IconCalendar from "../../assets/calendar.png";
+import PersonDefault from "../../assets/foto.png"
 
 import styles from "./style.module.scss";
 
@@ -25,7 +26,7 @@ const AccountSettingsComp = () => {
     <Layout>
       <section className={styles.containerAccount}>
         <img
-          src={user.image}
+          src={user.image !== '' ? user.name : PersonDefault}
           alt="Foto de perfil"
           className={styles.imageAccount}
         />
