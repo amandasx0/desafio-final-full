@@ -1,0 +1,44 @@
+@use "./variables.scss" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+h2 {
+  text-align: center;
+  font-family: v.$font-source;
+  font-size: 4em;
+  line-height: 1.2em;
+  color: v.$primary;
+  padding: 3rem 0;
+}
+
+@media (max-width: 1024px) {
+  h2 {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 425px) {
+  h2 {
+    font-size: 2em;
+    padding: 0
+
+  }
+}

@@ -1,0 +1,22 @@
+.layout {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  } 
+}
+
+.normal {
+  padding: 32px 0;
+} 
+
+.noPaddingTopAndBottom {
+  padding-top: 0;
+  padding-bottom: 0;
+}

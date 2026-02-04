@@ -1,0 +1,34 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.division {
+  width: 1px;
+  background-color: #CBCBCB;
+
+  &:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .itemsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .division {
+    height: 1px;
+    width: 40%;
+    margin-top: 1.5rem;
+  }
+}

@@ -1,0 +1,70 @@
+@use "../../styles/variables.scss" as v;
+
+.containerAccount {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 95%;
+  border: 1px solid #cbcbcb;
+  border-radius: 16px;
+  padding: 2rem;
+  gap: 2rem;
+  margin-top: 7rem;
+  font-family: v.$font-inter;
+
+  h6 {
+    font-size: 2rem;
+  }
+}
+
+.imageAccount {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 2px solid #00aaff;
+}
+
+.subtitleAccount {
+  color: #278733;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.boxInformationAccount {
+  display: flex;
+  gap: 1rem;
+  margin-left: -5px;
+  margin-top: 1rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerAccount {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+    .containerAccount {
+        width: 95%;
+        margin: 0;
+    }
+
+    .imageAccount {
+        width: 80%;
+        height: 80%;
+    }
+
+    .boxInformationAccount {
+        flex-direction: column;
+    }
+}

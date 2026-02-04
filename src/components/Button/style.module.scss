@@ -1,0 +1,49 @@
+@use "../../styles/variables.scss" as v;
+
+.button {
+  background-color: v.$primary;
+  padding: 8px 1.5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: v.$font-inter;
+  
+}
+
+.container {
+  &:hover {
+    background-color: darken(v.$primary, 20%);
+  }
+}
+
+.outlined {
+  background-color: #fff;
+  color: v.$primary;
+  border: 1px solid v.$primary;
+  &:hover {
+    background-color: lighten(v.$primary, 60%);
+  }
+}
+
+.orange {
+  background-color: v.$bg-orange;
+  &:hover {
+    background-color: lighten(v.$bg-orange, 10%);
+  }
+}
+
+.borderRadius {
+  border-radius: 0;
+}
+
+.isMobile {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 0;
+  font-size: 18px;
+  margin-top: 1.5rem;
+}

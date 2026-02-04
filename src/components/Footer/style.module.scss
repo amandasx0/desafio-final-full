@@ -1,0 +1,14 @@
+@use "../../styles/variables.scss" as v;
+
+.containerFooter {
+    background-color: lighten(#CBCBCB, 10%);
+    height: auto;
+}
+
+footer {
+    padding: 1.8rem 0;
+
+    p {
+        font-family: v.$font-inter;
+    }
+}

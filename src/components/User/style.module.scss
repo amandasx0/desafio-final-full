@@ -1,0 +1,92 @@
+@use "../../styles/variables.scss" as v;
+
+.containerButton {
+  display: flex;
+  > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.containerButtonMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.userArea {
+  position: relative;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid #00AAFF;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 240px;
+  background: v.$primary;
+  color: #fff;
+  padding: 12px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+strong {
+  margin-top: 12px;
+  font-family: v.$font-inter;
+  text-align: end;
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+  font-family: v.$font-inter;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 1.2em;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  li {
+    padding: 10px 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.logout {
+  color: #ffb3b3;
+}
+
+.boxInfoMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+   color: #fff;
+   margin-top: 1rem;
+   
+}
